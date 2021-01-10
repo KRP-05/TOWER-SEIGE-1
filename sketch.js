@@ -34,9 +34,9 @@ function setup() {
       
 
 
-      ball = new hexagon(250,800,50)
+      ball = new hexagon(250,200,50)
 
-      launch1 = new Launcher(ball.body,{x:300,y:770})
+      launch1 = new Launcher(ball.body,{x:300,y:170})
 
       block1 = new block(860,445,120,50)
       block2 = new block(990,445,120,50)
@@ -159,7 +159,7 @@ function mouseDragged(){
 
     function keyPressed(){
 		if(keyCode === UP_ARROW){
-			Matter.Body.setPosition(ball.body,{x:300,y:770})
+			Matter.Body.setPosition(ball.body,{x:300,y:200})
 			launch1.attach(ball.body)
 		}
 	}
